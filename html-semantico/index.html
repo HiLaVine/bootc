@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semántico</title>
+    <style>
+        .page{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        body{
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article>
+            <header>
+                <h1>HTML semántico</h1>
+                <p>Por Emmanuel Farrera <time datetime="2024-04-15 21:28">Abril 15th</time></p>
+            </header>
+            <p>Esta es una pagina web de ejemplo que explica el marcado semántico en HTML5</p>
+            <section>
+                <h2>El esquema del documento</h2>
+                <p>HTML5 Incluye varios elementos de "Contenido" de sección que afectan el contorno del documento</p>
+
+                <figure>
+                    <img src="/descarga.png" alt="Diagrama del uso de elementos semánticos" height="200">
+                    <figcaption>Elementos semánticos en HTML</figcaption>
+                </figure>
+
+                <h3>Encabezados</h3>
+                <p>El elemento <code>&lt;header&gt;</code> es uno de esos elementos que "crea secciones"</p>
+
+                <h3>Pie de página</h3>
+                <p>Asi mismo el elemento <code>&lt;footer&gt;</code>.</p>
+            </section>
+            <section>
+                <h2>HTML semántico en línea</h2>
+                <p>El elemento <code>&lt;time&gt;</code> es semántico, pero no crea una sección de contenido.</p>
+            </section>
+
+            <footer>
+                <p>Este articulo falso fue escrito por alguien.</p>
+            </footer>
+        </article>
+
+        <footer>
+            <p>&copy; 2023</p>
+
+            <address>
+                Por favor contacte a <a href="mailto:sinnafa01@gmail.com">Emmanuel</a> para mas información.
+            </address>
+        </footer>
+    </div>
+
+</html>

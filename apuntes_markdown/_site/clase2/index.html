@@ -1,0 +1,34 @@
+<h1>Clase 2</h1>
+<p>Repositorio: Proyecto que tiene codigo.</p>
+<h2>Git</h2>
+<p>Es un sistema de control de versiones distribuido gratuito y Open sourse.</p>
+<p><strong>Open source no significa gratis</strong></p>
+<p><em>Buscar: ¿Cuál es la diferencia entre un sistema de de control de versiones distribuido y uno centralizado?</em></p>
+<h2>Control de versiones</h2>
+<h3>Git Staging Area</h3>
+<p>Es el lugar donde se ponen todos las cosas que ya estas listas para ser usadas por el usuario. Todo lo que este en esta zona se va al commit.</p>
+<h3>Como crear un repositorio local.</h3>
+<ol>
+<li>git init</li>
+<li>git status</li>
+<li>git add .</li>
+<li></li>
+</ol>
+<h3>Branches</h3>
+<p>Son los cambios en el tiempo, y normalmente tenemos la rama principal. Pero tambien tenemos bifurcaciones llamadas features que son funcionalidades que se desarrollan al mismo tiempo.</p>
+<p><img src="image.png" alt="alt text"></p>
+<h3>Merge</h3>
+<p>Sirve para mezclar las bifurcaciones que teniamos y añadirlas a la rama principal con un commit.</p>
+<p><img src="image-1.png" alt="alt text"></p>
+<h3>Rebase</h3>
+<p>Tenemos la rama principal y esta lo que hace es poner las ramas al principio de la rama principal, modifcando el historial y si no se tiene cuidado causando problemas.</p>
+<p><img src="image-2.png" alt="alt text">
+<img src="image-3.png" alt="alt text"></p>
+<p><strong>Regla de oro: nunca hacer rebase en ramas publicas</strong></p>
+<h3>Git y los repositorios remotos.</h3>
+<p>Para eso seguimos los siguientes pasos:</p>
+<ol>
+<li>git remote add origin <url></li>
+<li>git push -u origin main</li>
+<li>git pull origin main</li>
+</ol>
