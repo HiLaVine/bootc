@@ -1,0 +1,75 @@
+html,body{
+    height: 100%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+.container{ /*En este caso el main axis depende del flex direction*/
+    display: flex; /*se comporta como bloque todo el contenedor*/
+    flex-wrap: wrap; /*acomoda los elementos */
+    flex-direction: row; /*establece cual es el main axis*/
+    justify-content: center;/*siempre modifica el main axis*/
+    align-items: center;/*Siempre modifica el croos axis*/
+    align-content: space-around;
+
+    border: 1px dashed #000;
+    height: 100%;
+}
+
+.item{
+    border: 1px solid #000;
+    height: 50px;
+    width: 300px;
+    background: papayawhip;
+    font-weight: bold;
+    text-align: center;
+    color: #00000090;
+}
+
+.grid-item{
+    border: 1px solid #000;
+    height: auto;
+    width: auto;
+    background: papayawhip;
+    font-weight: bold;
+    text-align: center;
+    color: #00000090
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header" "main main . sidebar" 
+    "footer footer footer footer";
+
+    border: 2px dashed teal;
+    height: 100%
+    
+}
+
+.item-a{
+    grid-area: header;
+}
+.item-b{
+    grid-area: main;
+}
+.item-c{
+    grid-area: sidebar;
+}
+.item-d{
+    grid-area: footer;
+}
+
+/*item-a{
+    background: #f1c40f;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}*/
